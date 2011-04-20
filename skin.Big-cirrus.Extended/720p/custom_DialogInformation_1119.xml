@@ -17,7 +17,7 @@
 		  <label>-</label> 
 		  <texturenofocus>-</texturenofocus> 
 		  <texturefocus>-</texturefocus> 
-		  <onfocus>XBMC.RunScript(script.skin.news,http://twitxbmc.googlecode.com/svn/addons/news-Big-cirrus-extended.txt)</onfocus> 
+		  <onfocus>XBMC.RunScript(script.skin.news,http://xbmc-eraser.googlecode.com/svn/addons/skin.Big-cirrus.Extended/news-Big-cirrus-extended.txt)</onfocus> 
 		  <!--onfocus>SetFocus(100)</onfocus--> 
 		</control>
 

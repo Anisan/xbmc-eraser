@@ -501,7 +501,7 @@
                 <width>300</width>
                 <height>170</height>
                 <aspectratio>stretch</aspectratio>
-                <texture background="true" diffuse="maskthumbnail.png">$INFO[Window.Property(RandomEpisode.1.Thumb)]</texture>
+                <texture background="true" diffuse="maskthumbnail.png">$INFO[Window.Property(NextAiredEpisode.1.Thumb)]</texture>
                 <visible>!Control.HasFocus(8011)</visible>
                 <include>VisibleFadeEffect</include>
               </control>

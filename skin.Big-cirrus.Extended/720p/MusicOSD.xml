@@ -2,9 +2,8 @@
 	<defaultcontrol always="true">602</defaultcontrol>
 	<controls>
 		<control type="group">
-			<animation effect="slide" start="0,-145" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,-145" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="0,-145" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)">Conditional</animation>
+			<include condition="Skin.HasSetting(BottomControlPanel)">BottomPanel</include>
+			<include condition="!Skin.HasSetting(BottomControlPanel)">TopPanel</include>
 			<control type="image"> <!-- background -->
 				<posx>0</posx>
 				<posy>0</posy>
@@ -16,12 +15,12 @@
 <!-- GROUP FOR PLAYER CONTROLS -->
 			<control type="group" id="100">
 				<posx>300</posx>
-				<posy>20</posy>
+				<posy>5</posy>
 				<control type="button" id="600">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>210</label>
 					<font>-</font>
 					<texturefocus>OSDPrevTrackFO.png</texturefocus>
@@ -33,8 +32,8 @@
 				<control type="button" id="601">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31354</label>
 					<font>-</font>
 					<texturefocus>OSDRewindFO.png</texturefocus>
@@ -46,8 +45,8 @@
 				<control type="togglebutton" id="602">
 					<posx>100</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31351</label>
 					<altlabel>208</altlabel>
 					<font>-</font>
@@ -63,8 +62,8 @@
 				<control type="button" id="603">
 					<posx>150</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31352</label>
 					<font>-</font>
 					<texturefocus>OSDStopFO.png</texturefocus>
@@ -76,8 +75,8 @@
 				<control type="button" id="604">
 					<posx>200</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31353</label>
 					<font>-</font>
 					<texturefocus>OSDForwardFO.png</texturefocus>
@@ -89,8 +88,8 @@
 				<control type="button" id="605">
 					<posx>250</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>209</label>
 					<font>-</font>
 					<texturefocus>OSDNextTrackFO.png</texturefocus>
@@ -102,13 +101,13 @@
 			</control>
 <!-- GROUP FOR REPEAT AND RANDOM BUTTONS -->
 			<control type="group" id="201">
-				<posx>600</posx>
-				<posy>20</posy>
+				<posx>575</posx>
+				<posy>5</posy>
 				<control type="button" id="704">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
 					<font>-</font>
 					<texturefocus>-</texturefocus>
@@ -120,8 +119,8 @@
 				<control type="image">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<texture>OSDRepeatNF.png</texture>
 					<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					<visible>!Control.HasFocus(704)</visible>
@@ -129,8 +128,8 @@
 				<control type="image">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<texture>OSDRepeatFO.png</texture>
 					<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 					<visible>Control.HasFocus(704)</visible>
@@ -138,8 +137,8 @@
 				<control type="image">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<texture>OSDRepeatOneNF.png</texture>
 					<visible>Playlist.IsRepeatOne</visible>
 					<visible>!Control.HasFocus(704)</visible>
@@ -147,8 +146,8 @@
 				<control type="image">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<texture>OSDRepeatOneFO.png</texture>
 					<visible>Playlist.IsRepeatOne</visible>
 					<visible>Control.HasFocus(704)</visible>
@@ -156,8 +155,8 @@
 				<control type="image">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<texture>OSDRepeatAllNF.png</texture>
 					<visible>Playlist.IsRepeat</visible>
 					<visible>!Control.HasFocus(704)</visible>
@@ -165,8 +164,8 @@
 				<control type="image">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<texture>OSDRepeatAllFO.png</texture>
 					<visible>Playlist.IsRepeat</visible>
 					<visible>Control.HasFocus(704)</visible>
@@ -174,8 +173,8 @@
 				<control type="togglebutton" id="705">
 					<posx>100</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 					<font>-</font>
 					<texturefocus>OSDRandomOffFO.png</texturefocus>
@@ -185,14 +184,13 @@
 					<alttexturenofocus>OSDRandomOnNF.png</alttexturenofocus>
 					<onclick>XBMC.PlayerControl(Random)</onclick>
 					<onleft>704</onleft>
-					<onright>700</onright>
+					<onright>706</onright>
 				</control>
-				<!--RECORD REMOVED FOR NOW
 				<control type="button" id="706">
 					<posx>150</posx>
 					<posy>0</posy>
-					<width>45</width>
-					<height>45</height>
+					<width>48</width>
+					<height>48</height>
 					<label>264</label>
 					<font>-</font>
 					<texturefocus>OSDRecordFO.png</texturefocus>
@@ -204,17 +202,17 @@
 					<onclick>XBMC.PlayerControl(record)</onclick>
 					<enable>Player.CanRecord</enable>
 					<animation effect="fade" start="100" end="50" time="100" condition="!Player.CanRecord">Conditional</animation>
-				</control> -->
+				</control> 
 			</control>
 <!-- SETTING GROUP -->
 			<control type="group" id="200">
 				<posx>800</posx>
-				<posy>20</posy>
+				<posy>5</posy>
 				<control type="button" id="700">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>10517</label>
 					<font>-</font>
 					<texturefocus>OSDPlaylistFO.png</texturefocus>
@@ -228,8 +226,8 @@
 				<control type="button" id="500">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>12006</label>
 					<font>-</font>
 					<texturefocus>OSDVizFO.png</texturefocus>
@@ -240,8 +238,8 @@
 				<control type="button" id="701">
 					<posx>100</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
 					<font>-</font>
 					<texturefocus>OSDPresetSettingsFO.png</texturefocus>
@@ -253,8 +251,8 @@
 				<control type="button" id="702">
 					<posx>150</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31048</label>
 					<font>-</font>
 					<texturefocus>OSDPreFO.png</texturefocus>
@@ -267,8 +265,8 @@
 				<control type="button" id="703">
 					<posx>200</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31128</label>
 					<font>-</font>
 					<texturefocus>OSDLyricsFO.png</texturefocus>
@@ -286,8 +284,8 @@
 				<control type="image"> <!-- background image -->
 					<posx>250</posx>
 					<posy>0</posy>
-					<width>28</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Skin.String(CustomMusicImage_Path)]</texture>
 					<visible>[Skin.HasSetting(CustomMusicScript_Enable) + !IsEmpty(Skin.String(CustomMusicScript_Path))]</visible>
@@ -297,8 +295,8 @@
 				<control type="button" id="804">
 					<posx>250</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>$INFO[Skin.String(CustomMusicLabel)]</label>
 					<font>-</font>
 					<texturefocus>-</texturefocus>
@@ -316,7 +314,7 @@
 				<description>separator image</description>
 				<posx>340</posx>
 				<posy>60</posy>
-				<width>570</width>
+				<width>670</width>
 				<height>1</height>
 				<align>left</align>
 				<aligny>center</aligny>

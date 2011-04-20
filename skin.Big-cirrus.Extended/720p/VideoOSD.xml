@@ -2,10 +2,8 @@
 	<defaultcontrol always="true">602</defaultcontrol>
 	<controls>
 		<control type="group">
-			<animation effect="slide" start="0,-145" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,-145" time="300" delay="150" tween="quadratic" easing="out">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="0,-145" time="300" tween="quadratic" easing="out" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)">Conditional</animation>
-
+			<include condition="Skin.HasSetting(BottomControlPanel)">BottomPanel</include>
+			<include condition="!Skin.HasSetting(BottomControlPanel)">TopPanel</include>
 			<control type="image"> <!-- background -->
 				<posx>0</posx>
 				<posy>0</posy>
@@ -17,12 +15,12 @@
 			<!-- SETTINGS GROUP (Bookmarks audio video) -->
 			<control type="group" id="200">
 				<posx>650</posx>
-				<posy>20</posy>
+				<posy>5</posy>
 				<control type="button" id="700">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>298</label>
 					<font>-</font>
 					<texturefocus>OSDBookMarksFO.png</texturefocus>
@@ -34,8 +32,8 @@
 				<control type="button" id="701">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>13396</label>
 					<font>-</font>
 					<texturefocus>OSDAudioFO.png</texturefocus>
@@ -47,8 +45,8 @@
 				<control type="button" id="702">
 					<posx>100</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>13395</label>
 					<font>-</font>
 					<texturefocus>OSDVideoFO.png</texturefocus>
@@ -57,11 +55,11 @@
 					<onright>703</onright>
 					<onclick>ActivateWindow(123)</onclick>
 				</control>
-			<control type="button" id="703">
+				<control type="button" id="703">
 					<posx>150</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31356</label>
 					<font>-</font>
 					<texturefocus>OSDSubtitlesFO.png</texturefocus>
@@ -76,8 +74,8 @@
 				<control type="button" id="704">
 					<posx>200</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31355</label>
 					<font>-</font>
 					<texturefocus>OSDDvdFO.png</texturefocus>
@@ -91,8 +89,8 @@
 				<control type="button" id="705">
 					<posx>250</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>264</label>
 					<font>-</font>
 					<texturefocus>OSDRecordFO.png</texturefocus>
@@ -106,8 +104,8 @@
 				<control type="image"> <!-- background image -->
 					<posx>300</posx>
 					<posy>0</posy>
-					<width>28</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[Skin.String(CustomVideoImage_Path)]</texture>
 					<visible>[Skin.HasSetting(CustomVideoScript_Enable) + !IsEmpty(Skin.String(CustomVideoScript_Path))]</visible>
@@ -117,8 +115,8 @@
 				<control type="button" id="706">
 					<posx>300</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>$INFO[Skin.String(CustomVideoLabel)]</label>
 					<font>-</font>
 					<texturefocus>-</texturefocus>
@@ -133,12 +131,12 @@
 			<!-- GROUP FOR PLAYER CONTROLS -->
 			<control type="group" id="100">
 				<posx>300</posx>
-				<posy>20</posy>
+				<posy>5</posy>
 				<control type="button" id="600">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>210</label>
 					<font>-</font>
 					<texturefocus>OSDPrevTrackFO.png</texturefocus>
@@ -150,8 +148,8 @@
 				<control type="button" id="601">
 					<posx>50</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31354</label>
 					<font>-</font>
 					<texturefocus>OSDRewindFO.png</texturefocus>
@@ -163,8 +161,8 @@
 				<control type="togglebutton" id="602">
 					<posx>100</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31351</label>
 					<altlabel>208</altlabel>
 					<font>-</font>
@@ -180,8 +178,8 @@
 				<control type="button" id="603">
 					<posx>150</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31352</label>
 					<font>-</font>
 					<texturefocus>OSDStopFO.png</texturefocus>
@@ -193,8 +191,8 @@
 				<control type="button" id="604">
 					<posx>200</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>31353</label>
 					<font>-</font>
 					<texturefocus>OSDForwardFO.png</texturefocus>
@@ -206,8 +204,8 @@
 				<control type="button" id="605">
 					<posx>250</posx>
 					<posy>0</posy>
-					<width>40</width>
-					<height>28</height>
+					<width>48</width>
+					<height>48</height>
 					<label>209</label>
 					<font>-</font>
 					<texturefocus>OSDNextTrackFO.png</texturefocus>
@@ -219,8 +217,8 @@
 				<control type="image" id="11">
 					<description>separator image</description>
 					<posx>0</posx>
-					<posy>40</posy>
-					<width>470</width>
+					<posy>55</posy>
+					<width>670</width>
 					<height>1</height>
 					<colordiffuse>66FFFFFF</colordiffuse>
 					<texture>separator2.png</texture>
@@ -269,4 +267,7 @@
 			<include>WeatherOSD</include>
 		</control>
 	</controls>
+	
+	
 </window>
+
