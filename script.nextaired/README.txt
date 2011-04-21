@@ -7,20 +7,17 @@ For example -
  
 XBMC.RunScript(script.nextaired,limit=10&amp;alarm=30)
 
-will return 10  episodes every 30 minutes.
+will return 10 episodes  every 30 minutes.
 
 
 Labels -
 
- 
-"NextAiredEpisode.%d.ShowTitle"
-"NextAiredEpisode.%d.EpisodeTitle"
-"NextAiredEpisode.%d.EpisodeNo"
-"NextAiredEpisode.%d.EpisodeSeason"
-"NextAiredEpisode.%d.EpisodeNumber"
+"NextAiredEpisode.%d.Title"
 "NextAiredEpisode.%d.Rating"
+"NextAiredEpisode.%d.Year"
+"NextAiredEpisode.%d.RunningTime"
 "NextAiredEpisode.%d.Path"
+"NextAiredEpisode.%d.Trailer"
 "NextAiredEpisode.%d.Fanart"
 "NextAiredEpisode.%d.Thumb"
  
-

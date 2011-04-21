@@ -71,7 +71,7 @@ class Main:
         unplayed = "where playCount is null "
         # sql statement
         # tv shows not finished
-        sql_episodes = "select episodeview.* from episodeview %s order by episodeview.strTitle " % ( unplayed, )
+        sql_episodes = "select episodeview.* from episodeview %s order by episodeview.idShow, episodeview.c12, episodeview.strFileName  " % ( unplayed, )
         # query the database
         episodes_xml = xbmc.executehttpapi( "QueryVideoDatabase(%s)" % quote_plus( sql_episodes ), )
         # separate the records
