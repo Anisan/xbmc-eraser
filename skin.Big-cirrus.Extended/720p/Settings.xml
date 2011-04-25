@@ -41,19 +41,19 @@
         <ondown>9000</ondown>
         <pagecontrol>-</pagecontrol>
         <scrolltime>300</scrolltime>
-        <itemlayout height="60" width="260">
+        <itemlayout height="50" width="260">
           <control type="image">
             <posx>0</posx>
             <posy>0</posy>
             <width>260</width>
-            <height>61</height>
+            <height>51</height>
             <texture border="5">menuitemNF.png</texture>
           </control>
           <control type="label">
             <posx>250</posx>
             <posy>0</posy>
             <width>380</width>
-            <height>61</height>
+            <height>51</height>
             <font>cirrus_35</font>
             <textcolor>grey3</textcolor>
             <align>right</align>
@@ -61,19 +61,19 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
         </itemlayout>
-        <focusedlayout height="60" width="260">
+        <focusedlayout height="50" width="260">
           <control type="image">
             <posx>0</posx>
             <posy>0</posy>
             <width>260</width>
-            <height>61</height>
+            <height>51</height>
             <texture border="5">listwhitegradient.png</texture>
           </control>
           <control type="label">
             <posx>250</posx>
             <posy>0</posy>
             <width>380</width>
-            <height>61</height>
+            <height>51</height>
             <font>cirrus_35</font>
             <textcolor>white</textcolor>
             <align>right</align>
@@ -94,7 +94,14 @@
             <onclick>ActivateWindow(VideosSettings)</onclick>
             <icon>special://skin/backgrounds/videos_settings.jpg</icon>
           </item>
-          <item id="3">
+		  <item id="10">
+			  <label>TV</label> 
+			  <label2>31409</label2> 
+			  <onclick>ActivateWindow(MyTVSettings)</onclick> 
+			  <icon>special://skin/backgrounds/tv.jpg</icon> 
+			  <visible>Skin.HasSetting(LiveTvIsEnable)</visible> 
+		  </item>
+		  <item id="3">
             <label>2</label>
             <label2>31402</label2>
             <onclick>ActivateWindow(MusicSettings)</onclick>

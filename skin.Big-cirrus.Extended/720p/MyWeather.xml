@@ -133,22 +133,35 @@
 					<posy>90</posy>
 					<include>ButtonCommonValues</include>
 					<label>33036</label>
+					<onleft>6100</onleft>
+					<onright>6100</onright>
+					<onup>101</onup>
+					<ondown>1021</ondown>
+					<onfocus>Skin.SetString(WeatherPlus,2)</onfocus>
+					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
+				</control>
+				<control type="button" id="1021">
+					<description>36hour button</description>
+					<posx>5</posx>
+					<posy>135</posy>
+					<include>ButtonCommonValues</include>
+					<label>33034</label>
 					<onleft>6000</onleft>
 					<onright>6000</onright>
-					<onup>101</onup>
+					<onup>102</onup>
 					<ondown>103</ondown>
-					<onfocus>Skin.SetString(WeatherPlus,2)</onfocus>
+					<onfocus>Skin.SetString(WeatherPlus,5)</onfocus>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
 				</control>
 				<control type="button" id="103">
 					<description>Weekend button</description>
 					<posx>5</posx>
-					<posy>135</posy>
+					<posy>180</posy>
 					<include>ButtonCommonValues</include>
-					<label>Weekend</label>
+					<label>33037</label>
 					<onleft>6000</onleft>
 					<onright>6000</onright>
-					<onup>102</onup>
+					<onup>1021</onup>
 					<ondown>104</ondown>
 					<onfocus>Skin.SetString(WeatherPlus,4)</onfocus>
 					<visible>StringCompare(Weather.Plugin,weather.weatherplus)</visible>
@@ -156,9 +169,9 @@
 				<control type="button" id="104">
 					<description>10 day button</description>
 					<posx>5</posx>
-					<posy>180</posy>
+					<posy>225</posy>
 					<include>ButtonCommonValues</include>
-					<label>10-Day</label>
+					<label>31253</label>
 					<onleft>6000</onleft>
 					<onright>6000</onright>
 					<onup>103</onup>
@@ -169,7 +182,7 @@
 				<control type="button" id="2">
 					<description>Refresh button</description>
 					<posx>5</posx>
-					<posy>225</posy>
+					<posy>270</posy>
 					<include>ButtonCommonValues</include>
 					<label>103</label>
 					<onleft>6000</onleft>
@@ -181,7 +194,7 @@
 				<control type="button" id="610">
 					<description>PlayerControls</description>
 					<posx>5</posx>
-					<posy>270</posy>
+					<posy>315</posy>
 					<include>ButtonCommonValues</include>
 					<label>16003</label>
 					<onleft>6000</onleft>
@@ -195,7 +208,7 @@
 				<control type="button" id="5">
 				  <description>Custom Weather Script Button</description>
 				  <posx>5</posx>
-				  <posy>315</posy>
+				  <posy>360</posy>
 				  <label>$INFO[Skin.String(WeatherScript_Label)]</label>
 				  <onclick>SetFocus(50)</onclick>
 				  <onclick>XBMC.RunScript($INFO[Skin.String(WeatherScript_Path)])</onclick>
@@ -211,7 +224,7 @@
 				<control type="button" id="4">
 				  <description>Settings button</description>
 				  <posx>5</posx>
-				  <posy>360</posy>
+				  <posy>405</posy>
 				  <label>5</label>
 				  <onclick>ActivateWindow(MyWeatherSettings)</onclick>
 				  <include>ButtonCommonValues</include>
@@ -226,7 +239,7 @@
 				<!-- submenu goes here -->
 				<control type="radiobutton" id="200">
 					<posx>5</posx>
-					<posy>405</posy>
+					<posy>450</posy>
 					<description>Fanart Toggle</description>
 					<include>ButtonCommonValues</include>
 					<label>31307</label>
@@ -240,7 +253,7 @@
 				</control>
 				<control type="button" id="201">
 					<posx>5</posx>
-					<posy>450</posy>
+					<posy>495</posy>
 					<description>Search</description>
 					<include>ButtonMediaSubCommonValues</include>
 					<label>31317</label>

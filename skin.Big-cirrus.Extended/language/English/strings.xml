@@ -85,6 +85,8 @@
   <string id="31133">Enable Plot in fullscreen video info</string>
   <string id="31134">Clean Home Screen (remove logo and buttons)</string>
   <string id="31135">Horizontal Home Menu</string>
+  <string id="31136">Bottom control panel</string>
+  
   
   <string id="31140">Music OSD</string>
   <string id="31141">Video OSD</string>
@@ -98,9 +100,13 @@
   <string id="31205">Lyrics Source</string>
 
   <!-- The Weather Channel Script labels -->
+  <string id="31948">Chance Precip</string> 
   <string id="31250">Radar &amp; Forecast</string>
   <string id="31251">Forecast</string>
   <string id="31252">TWC Script</string>
+  <string id="31253">10 day</string> 
+  <string id="31970">Fetching forecast info...</string> 
+
 
   <!-- Extra labels -->
   <string id="31300">Current Temp</string>

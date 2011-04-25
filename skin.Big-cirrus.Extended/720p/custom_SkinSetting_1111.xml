@@ -40,12 +40,12 @@
         <ondown>9000</ondown>
         <pagecontrol>-</pagecontrol>
         <scrolltime>300</scrolltime>
-        <itemlayout height="80" width="290">
+        <itemlayout height="70" width="290">
           <control type="image">
             <posx>0</posx>
             <posy>0</posy>
             <width>290</width>
-            <height>81</height>
+            <height>71</height>
             <texture border="5">menuitemNF.png</texture>
           </control>
           <control type="label">
@@ -71,12 +71,12 @@
             <label>$INFO[ListItem.Label2]</label>
           </control>
         </itemlayout>
-        <focusedlayout height="80" width="260">
+        <focusedlayout height="70" width="260">
           <control type="image">
             <posx>0</posx>
             <posy>0</posy>
             <width>290</width>
-            <height>81</height>
+            <height>71</height>
             <texture border="5">listwhitegradient.png</texture>
             <animation effect="fade" start="100" end="30" time="100" condition="!Control.HasFocus(9000)">Conditional</animation>
           </control>
@@ -195,7 +195,7 @@
             <width>750</width>
             <height>40</height>
             <font>cirrus_20</font>
-            <label>Bottom control panel</label>
+            <label>31136</label>
             <textcolor>grey2</textcolor>
             <focusedcolor>white</focusedcolor>
             <texturefocus flipx="true">listwhitegradient.png</texturefocus>
@@ -216,6 +216,20 @@
             <onclick>Skin.ToggleSetting(otlist)</onclick>
             <selected>Skin.HasSetting(otlist)</selected>
           </control>
+		  <control type="radiobutton" id="105">
+			  <description>Enable LiveTV</description> 
+			  <width>750</width> 
+			  <height>40</height> 
+			  <font>font13</font> 
+			  <label>Enable LiveTV</label> 
+			  <textcolor>grey2</textcolor> 
+			  <focusedcolor>white</focusedcolor> 
+			  <texturefocus>MenuItemFO.png</texturefocus> 
+			  <texturenofocus>MenuItemNF.png</texturenofocus> 
+			  <onclick>Skin.ToggleSetting(LiveTvIsEnable)</onclick> 
+			  <selected>Skin.HasSetting(LiveTvIsEnable)</selected> 
+		  </control>
+
 		  
           <control type="radiobutton" id="106">
             <width>750</width>
@@ -701,6 +715,20 @@
             <texturenofocus>menuitemNF.png</texturenofocus>
             <enable>Library.HasContent(TVShows)</enable>
           </control>
+		  <control type="radiobutton" id="230">
+            <description>Hide LiveTV Button</description>
+            <width>750</width>
+            <height>40</height>
+            <font>cirrus_20</font>
+            <textcolor>grey2</textcolor>
+            <focusedcolor>white</focusedcolor>
+            <label>$LOCALIZE[31111] - LiveTV</label>
+            <onclick>Skin.ToggleSetting(HomeMenuNoLiveTVButton)</onclick>
+            <selected>Skin.HasSetting(HomeMenuNoLiveTVButton)</selected>
+			<visible>Skin.HasSetting(LiveTvIsEnable)</visible> 
+            <texturefocus flipx="true">listwhitegradient.png</texturefocus>
+            <texturenofocus>menuitemNF.png</texturenofocus>
+          </control>
           <control type="radiobutton" id="225">
             <description>Hide Music Button</description>
             <width>750</width>
@@ -931,6 +959,13 @@
                 <icon>special://skin/backgrounds/videos.jpg</icon>
                 <thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
                 <!-- <visible>Skin.HasSetting(HomeMenuNoTVShowsButton) + Library.HasContent(TVShows)</visible> -->
+              </item>
+			  <item id="12">
+                <label>Live TV</label>
+                <onclick>-</onclick>
+                <icon>special://skin/backgrounds/tv.jpg</icon>
+                <thumb>$INFO[Skin.String(Home_Custom_Back_LiveTV_Folder)]</thumb>
+                <visible>Skin.HasSetting(LiveTvIsEnable)</visible>
               </item>
               <item id="2">
                 <label>2</label>
@@ -1577,6 +1612,66 @@
                 <texturenofocus border="5">button-nofocus.png</texturenofocus>
                 <texturefocus border="5">button-focus.png</texturefocus>
                 <onclick>Skin.Reset(Home_Custom_Back_TVShow_Folder)</onclick>
+                <onleft>301</onleft>
+                <onright>300</onright>
+                <onup>304</onup>
+                <ondown>304</ondown>
+              </control>
+            </control>
+			<control type="group"> <!-- LiveTV -->
+              <visible>Container(9003).HasFocus(12)</visible>
+              <control type="button" id="300">
+                <description>Single Image button</description>
+                <posx>5</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <label>31113</label>
+                <font>cirrus_20</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                <texturefocus border="5">button-focus.png</texturefocus>
+                <onclick>Skin.SetImage(Home_Custom_Back_LiveTV_Folder)</onclick>
+                <onleft>302</onleft>
+                <onright>301</onright>
+                <onup>304</onup>
+                <ondown>304</ondown>
+              </control>
+              <control type="button" id="301">
+                <description>Multi Image button</description>
+                <posx>190</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <label>31114</label>
+                <font>cirrus_20</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                <texturefocus border="5">button-focus.png</texturefocus>
+                <onclick>Skin.SetPath(Home_Custom_Back_LiveTV_Folder)</onclick>
+                <onleft>300</onleft>
+                <onright>302</onright>
+                <onup>304</onup>
+                <ondown>304</ondown>
+              </control>
+              <control type="button" id="302">
+                <description>Default Image button</description>
+                <posx>375</posx>
+                <posy>0</posy>
+                <width>180</width>
+                <height>40</height>
+                <label>571</label>
+                <font>cirrus_20</font>
+                <textcolor>grey2</textcolor>
+                <focusedcolor>white</focusedcolor>
+                <align>center</align>
+                <texturenofocus border="5">button-nofocus.png</texturenofocus>
+                <texturefocus border="5">button-focus.png</texturefocus>
+                <onclick>Skin.Reset(Home_Custom_Back_LiveTV_Folder)</onclick>
                 <onleft>301</onleft>
                 <onright>300</onright>
                 <onup>304</onup>

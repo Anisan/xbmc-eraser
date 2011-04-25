@@ -1,3 +1,9 @@
+[B]1.0.17[/B]
+change size fonts
+add weather 36hour
+change weather hourly
+add PVR support (beta)
+
 [B]1.0.16[/B]
 change OSD icons
 option position control panel

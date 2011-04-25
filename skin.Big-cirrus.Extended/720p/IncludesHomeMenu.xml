@@ -656,6 +656,13 @@
 						<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom10_Path)],return)</onclick>
 						<visible>Skin.HasSetting(Menu_Custom10)</visible>
 					</item>
+					<item id="33">
+					  <label>Live TV</label> 
+					  <onclick>ActivateWindow(TV)</onclick> 
+					  <icon>special://skin/backgrounds/tv.jpg</icon> 
+					  <thumb>$INFO[Skin.String(Home_Custom_Back_LiveTV_Folder)]</thumb> 
+					  <visible>[Skin.HasSetting(LiveTvIsEnable) + !Skin.HasSetting(HomeMenuNoLiveTVButton)]</visible> 
+					</item>
 					<item id="3">
 						<label>2</label>
 						<onclick>ActivateWindow(Music)</onclick>

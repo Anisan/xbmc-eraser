@@ -1,6 +1,273 @@
 <fonts>
 	<fontset id="Default" unicode="true">
+		<font>
+			<name>font10</name>
+			<filename>DejaVuSans.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>font12</name>
+			<filename>DejaVuSans.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>font12caps</name>
+			<filename>DefaultCaps.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>font13</name>
+			<filename>DejaVuSans.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font13caps</name>
+			<filename>DefaultCaps.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font16caps</name>
+			<filename>DefaultCaps.ttf</filename>
+			<size>27</size>
+		</font>
+		<font>
+			<name>font30</name>
+			<filename>DejaVuSans.ttf</filename>
+			<size>32</size>
+		</font>
+		<font>
+			<name>fontContextMenu</name>
+			<filename>DejaVuSans.ttf</filename>
+			<size>20</size>
+		</font>
 		
+		<font>
+			<name>cirrus_12</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>14</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_13</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>15</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_16</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>18</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_18</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>20</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_20</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>22</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_24</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>26</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_26</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>28</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_30</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>32</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_35</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>37</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_40</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>42</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_50</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>52</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_70</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>72</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_12_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>16</size>
+			
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_13_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>17</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_15_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>19</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_16_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>20</size>
+			
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_18_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>22</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_20_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>24</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_24_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>28</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_30_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>34</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_40_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>44</size>
+			<style>bold</style>
+		</font>
+		<font>
+			<name>cirrus_50_Bold</name>
+			<filename>Vegur-Light.ttf</filename>
+			<size>54</size>
+			<style>bold</style>
+		</font>
+		
+		<font>
+			<name>font10_title</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>font12_title</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>18</size>
+		</font>
+		<font>
+			<name>font13_title</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font24_title</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>26</size>
+		</font>
+		<font>
+			<name>font28_title</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>30</size>
+		</font>
+		<font>
+			<name>font30_title</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>32</size>
+		</font>
+		<font>
+			<name>font35_title</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>37</size>
+		</font>
+		<font>
+			<name>font50caps_title</name>
+			<filename>DejaVuSans-Bold-Caps.ttf</filename>
+			<size>52</size>
+		</font>
+		<font>
+			<name>WeatherTemp</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>82</size>
+		</font>
+		<font>
+			<name>calendar45caps_title</name>
+			<filename>calendarTitleCaps.ttf</filename>
+			<size>45</size>
+		</font>
+		<font>
+			<name>calendar30caps_title</name>
+			<filename>calendarTitleCaps.ttf</filename>
+			<size>30</size>
+		</font>
+		<font>
+			<name>calendar25caps_title</name>
+			<filename>calendarTitleCaps.ttf</filename>
+			<size>25</size>
+		</font>
+		<font>
+			<name>calendar12_title</name>
+			<filename>calendarTitle.ttf</filename>
+			<size>12</size>
+		</font>
+		<font>
+			<name>calendar16</name>
+			<filename>calendarDefaultCaps.ttf</filename>
+			<size>16</size>
+		</font>
+		<font>
+			<name>calendar15</name>
+			<filename>calendarDefaultCaps.ttf</filename>
+			<size>15</size>
+		</font>
+		<font>
+			<name>calendar14</name>
+			<filename>calendarDefaultCaps.ttf</filename>
+			<size>14</size>
+		</font>
+		<font>
+			<name>calendar12</name>
+			<filename>calendarDefaultCaps.ttf</filename>
+			<size>12</size>
+		</font>
+		<font>
+			<name>calendar10</name>
+			<filename>calendarDefaultCaps.ttf</filename>
+			<size>10</size>
+		</font>
+	</fontset>
+	<fontset id="Large" unicode="true">
 		<font>
 			<name>font10</name>
 			<filename>DejaVuSans.ttf</filename>
@@ -268,228 +535,225 @@
 			<size>10</size>
 		</font>
 	</fontset>
-	<fontset id="Default-5" unicode="true">
-		
+	<fontset id="Small" unicode="true">
 		<font>
 			<name>font10</name>
 			<filename>DejaVuSans.ttf</filename>
-			<size>14</size>
+			<size>10</size>
 		</font>
 		<font>
 			<name>font12</name>
 			<filename>DejaVuSans.ttf</filename>
-			<size>18</size>
+			<size>12</size>
 		</font>
 		<font>
 			<name>font12caps</name>
 			<filename>DefaultCaps.ttf</filename>
-			<size>18</size>
+			<size>12</size>
 		</font>
 		<font>
 			<name>font13</name>
 			<filename>DejaVuSans.ttf</filename>
-			<size>22</size>
+			<size>13</size>
 		</font>
 		<font>
 			<name>font13caps</name>
 			<filename>DefaultCaps.ttf</filename>
-			<size>22</size>
+			<size>13</size>
 		</font>
 		<font>
 			<name>font16caps</name>
 			<filename>DefaultCaps.ttf</filename>
-			<size>27</size>
+			<size>16</size>
 		</font>
 		<font>
 			<name>font30</name>
 			<filename>DejaVuSans.ttf</filename>
-			<size>32</size>
+			<size>30</size>
 		</font>
 		<font>
 			<name>fontContextMenu</name>
 			<filename>DejaVuSans.ttf</filename>
-			<size>20</size>
+			<size>15</size>
 		</font>
 		
 		<font>
 			<name>cirrus_12</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>14</size>
+			<size>12</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_13</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>15</size>
+			<size>13</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_16</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>18</size>
+			<size>16</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_18</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>20</size>
+			<size>18</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_20</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>22</size>
+			<size>20</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_24</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>26</size>
+			<size>24</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_26</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>28</size>
+			<size>26</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_30</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>32</size>
+			<size>30</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_35</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>37</size>
+			<size>35</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_40</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>42</size>
+			<size>40</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_50</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>52</size>
+			<size>50</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_70</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>72</size>
+			<size>70</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_12_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>16</size>
-			
+			<size>12</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_13_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>17</size>
+			<size>13</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_15_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>19</size>
+			<size>15</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_16_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>20</size>
-			
+			<size>16</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_18_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>22</size>
+			<size>18</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_20_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>24</size>
+			<size>20</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_24_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>28</size>
+			<size>24</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_30_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>34</size>
+			<size>30</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_40_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>44</size>
+			<size>40</size>
 			<style>bold</style>
 		</font>
 		<font>
 			<name>cirrus_50_Bold</name>
 			<filename>Vegur-Light.ttf</filename>
-			<size>54</size>
+			<size>50</size>
 			<style>bold</style>
 		</font>
 		
 		<font>
 			<name>font10_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>14</size>
+			<size>10</size>
 		</font>
 		<font>
 			<name>font12_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>18</size>
+			<size>12</size>
 		</font>
 		<font>
 			<name>font13_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>22</size>
+			<size>13</size>
 		</font>
 		<font>
 			<name>font24_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>26</size>
+			<size>24</size>
 		</font>
 		<font>
 			<name>font28_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>30</size>
+			<size>28</size>
 		</font>
 		<font>
 			<name>font30_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>32</size>
+			<size>30</size>
 		</font>
 		<font>
 			<name>font35_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>37</size>
+			<size>35</size>
 		</font>
 		<font>
 			<name>font50caps_title</name>
 			<filename>DejaVuSans-Bold-Caps.ttf</filename>
-			<size>52</size>
+			<size>50</size>
 		</font>
 		<font>
 			<name>WeatherTemp</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>82</size>
+			<size>75</size>
 		</font>
 		<font>
 			<name>calendar45caps_title</name>
